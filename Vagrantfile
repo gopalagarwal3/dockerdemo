@@ -20,6 +20,7 @@ Vagrant.configure("2") do |config|
 
   # Share an additional folder to the guest VM.
   config.vm.synced_folder "C:/Users/gagarwal/Source/Repos/", "/vagrant_demo"
+  config.vm.synced_folder "D:/vagrant/dockerdemo/", "/vagrant_cicd"
   
   config.vm.provider "virtualbox" do |vb|
   # Customize the amount of memory on the VM:
