@@ -16,7 +16,7 @@ pipeline {
     stage('Run') {
 		  steps {
 			withDockerRegistry(credentialsId: 'JenkinsDockerHub', url:'') {
-			  sh 'docker run -p 5000:5000 --rm -it gopalagarwal/cicd:latest'
+			  sh 'docker run -p 5000:5000 gopalagarwal/cicd:latest'
 			}
 		}
     }
