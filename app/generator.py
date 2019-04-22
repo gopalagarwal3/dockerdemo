@@ -23,11 +23,11 @@ def generate_buzz():
     buzz_terms = sample(buzz, 2)
     phrase = ' '.join([sample(adjectives), buzz_terms[0], sample(adverbs),
         sample(verbs), buzz_terms[1]])
-    return phrase.title()
+    return 'V1: ' + phrase.title()
 
     # Breaking Tests
     # phrase = ' '.join([sample(adjectives), buzz_terms[0]])
-    # return phrase.title()
+    # return 'V2: ' + phrase.title()
 
 
 if __name__ == "__main__":

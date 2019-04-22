@@ -19,7 +19,6 @@ Vagrant.configure("2") do |config|
   config.vm.network "private_network", ip: "192.168.33.10"
 
   # Share an additional folder to the guest VM.
-  config.vm.synced_folder "C:/Users/gagarwal/Source/Repos/", "/vagrant_demo"
   config.vm.synced_folder "D:/vagrant/dockerdemo/", "/vagrant_cicd"
   
   config.vm.provider "virtualbox" do |vb|
