@@ -25,6 +25,7 @@ def generate_buzz():
     #     sample(verbs), buzz_terms[1]])
     # return phrase.title()
 
+    # Breaking Tests
     phrase = ' '.join([sample(adjectives), buzz_terms[0]])
     return phrase.title()
 

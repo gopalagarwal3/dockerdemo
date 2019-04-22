@@ -12,7 +12,7 @@ pipeline {
         sh 'python -m pytest -v tests/test.py --junit-xml test/results.xml'
       }
       post {
-        success {
+        always {
                 junit 'test/results.xml'
             }
         }
